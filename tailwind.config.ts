@@ -50,6 +50,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        phosphorescent : {
+          green: "#A7F511"
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -65,10 +68,17 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "float": {
+          from : {transform: "translateY(-12px)"},
+          to : {transform: "translateY(12px)"}
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 1.3s alternate-reverse infinite",
+        "float-reverse": "float 1s alternate infinite"
+
       },
     },
   },
